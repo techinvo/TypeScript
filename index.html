@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combat Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container mt-5 d-flex flex-colunm">
+        <div class="card w-100">
+            <div class="card-header">
+                <h1 class="mb-0">Combat Game</h1>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="playerAttackPower">Player Attack Power:</label>
+                    <input type="number" class="form-control" id="playerAttackPower" value="30">
+                </div>
+                <div class="form-group">
+                    <label for="playerHealth">Player Health:</label>
+                    <input type="number" class="form-control" id="playerHealth" value="100">
+                </div>
+                <button id="startCombatButton" class="btn btn-primary" onclick="startCombat()">Start Combat</button>
+                <button class="btn btn-secondary" onclick="clearResults()">Clear Results</button>
+            </div>
+        </div>
+        <div class="card w-100">
+            <div class="card-body" id="combatResult"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
